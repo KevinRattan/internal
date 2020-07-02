@@ -18,8 +18,8 @@ app.use(bodyParser.json());
 // from a cloud data store
 const mockEvents = {
     events: [
-        { title: 'an event', id: 1, description: 'something really cool' },
-        { title: 'another event', id: 2, description: 'something even cooler' }
+        { title: 'An event', id: 1, description: 'something really cool' },
+        { title: 'A new event', id: 2, description: 'something even cooler' }
     ]
 };
 
@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 
 // version endpoint to provide easy convient method to demonstrating tests pass/fail
 app.get('/version', (req, res) => {
-    res.json({ version: '1.0.7' });
+    res.json({ version: '1.0.8' });
 });
 
 
