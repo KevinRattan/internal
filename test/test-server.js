@@ -23,7 +23,7 @@ describe('GET /', function() {
           if (err) {
             return done(err);
           }
-          chai.expect(JSON.parse(res.text)).to.eql({ version: '1.0.9' });
+          chai.expect(JSON.parse(res.text)).to.eql({ version: '1.0.10' });
           return done();
         });
     });
